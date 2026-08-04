@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+venv/
+.venv/
+node_modules/
+frontend/dist/
+data/
+*.db
+*.key
+.env
+.env.local
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+# Runtime logs — local-only, often huge
+*.log
+# OAuth client secret JSON files (Google download default name)
+client_secret_*.json
+# Pytest cache
+.pytest_cache/
+# Claude Code per-machine settings
+.claude/settings.local.json
+.claude/*.lock
+# Local, data-dependent diagnostic; unsuitable for a public clone.
+backend/scripts/_test_compose_10s.py
+
+# Bundled font files for the visualizer engine sidecar — usually
+# carry per-vendor licenses (Adobe, etc.) so we keep them out of git.
+# Run-time auto-registration in exporter.ts picks up whatever is here.
+backend/visualizer_engine/fonts/*.otf
+backend/visualizer_engine/fonts/*.ttf
+backend/visualizer_engine/fonts/*.woff
+backend/visualizer_engine/fonts/*.woff2

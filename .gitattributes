@@ -1,0 +1,27 @@
+# Treat text files as text — git decides line-ending normalisation
+# automatically per platform. Eliminates the LF→CRLF warnings on
+# Windows checkouts without surprising Linux/macOS users.
+* text=auto
+
+# Force LF on shell scripts + Python (which Linux runtimes expect).
+*.sh    text eol=lf
+*.py    text eol=lf
+
+# Binary blobs we never diff or merge.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.gif   binary
+*.svg   binary
+*.webm  binary
+*.mp4   binary
+*.mp3   binary
+*.wav   binary
+*.flac  binary
+*.ogg   binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
