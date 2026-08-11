@@ -19,7 +19,7 @@
     "fft.js": "^4.0.4"
   },
   "devDependencies": {
-    "@types/node": "^20.14.0",
+    "@types/node": "^26.2.0",
     "rimraf": "^5.0.0",
     "typescript": "^5.4.0"
   },
